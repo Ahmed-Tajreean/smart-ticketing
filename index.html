@@ -115,7 +115,7 @@
 
         <!-- PH paribahan section start -->
         <section id="ph-paribahan"
-            class="text-center my-10 mt-32 rounded-lg border-t-2 border-[#1DD100] bg-[#F7F8F8] lg:my-20">
+            class="text-center my-10 mt-32 rounded-t-[88px] border-t-2 border-[#1DD100] bg-[#F7F8F8] lg:my-20">
             <h2 class="text-3xl font-extrabold mb-10 mt-24">P.H Paribahan</h2>
             <p class="mb-12">Yes, you can run unit tests and view the results directly within the app. The integrated
                 testing features
@@ -183,12 +183,14 @@
                 <!-- Greenline paribahan end -->
 
                 <!-- select your seat start -->
-                <div class="w-[100%] lg:w-[100%] h-[418px] bg-white flex rounded-3xl">
+                <div class="w-[100%] lg:w-[100%] h-[1100px] bg-white flex rounded-3xl">
                     <!-- left side start -->
                     <div class="w-[60%] pt-2 pl-8">
-                        <h3 class="text-2xl font-extrabold mb-6 mt-24 text-start">Select Your Seat</h3>
-                        <hr class="border border-dashed bg-[#03071233] mb-6">
-                        <div class="flex justify-between">
+                        <div class="w-[90%] m-auto">
+                            <h3 class="text-2xl font-extrabold mb-6 mt-24 text-start">Select Your Seat</h3>
+                            <hr class="border border-dashed bg-[#03071233] mb-6">
+                        </div>
+                        <div class="w-[90%] m-auto flex justify-between">
                             <div class="flex gap-2">
                                 <img src="images/seat-gray.png" alt="">
                                 <p class="text-[#03071280] text-lg font-medium">Available</p>
@@ -198,44 +200,237 @@
                                 <p class="text-[#1DD100] text-lg font-medium">Selected</p>
                             </div>
                         </div>
-                        <hr class="border border-dashed bg-[#03071233] mb-6 mt-4">
+                        <div class="w-[90%] m-auto">
+                            <hr class="border border-dashed bg-[#03071233] mb-6 mt-4">
+                        </div>
 
-                        <div id='seats' class="">
-                            <div>
-                                <p>A</p>
+                        <div class="w-[90%] m-auto space-y-5 mt-6 text-lg font-medium">
+                            <div class="w-full flex justify-end pr-3.5">
+                                <button class="btn w-[100px] h-[50px] ">A1</button>
+                            </div>
+                            <!-- 1st row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>A</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="A1" class="btn w-[100px] h-[50px]">A1</button>
+                                        <button id="A2" class="btn w-[100px] h-[50px]">A2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="A3" class="btn w-[100px] h-[50px]">A3</button>
+                                        <button id="A4" class="btn w-[100px] h-[50px]">A4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2nd row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>B</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="B1" class="btn w-[100px] h-[50px]">B1</button>
+                                        <button id="B2" class="btn w-[100px] h-[50px]">B2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="B3" class="btn w-[100px] h-[50px]">B3</button>
+                                        <button id="B4" class="btn w-[100px] h-[50px]">B4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3rd row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>C</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="C1" class="btn w-[100px] h-[50px]">C1</button>
+                                        <button id="C2" class="btn w-[100px] h-[50px]">C2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="C3" class="btn w-[100px] h-[50px]">C3</button>
+                                        <button id="C4" class="btn w-[100px] h-[50px]">C4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4th row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>D</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="D1" class="btn w-[100px] h-[50px]">D1</button>
+                                        <button id="D2" class="btn w-[100px] h-[50px]">D2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="D3" class="btn w-[100px] h-[50px]">D3</button>
+                                        <button id="D4" class="btn w-[100px] h-[50px]">D4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5th row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>E</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="E1" class="btn w-[100px] h-[50px]">E1</button>
+                                        <button id="E2" class="btn w-[100px] h-[50px]">E2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="E3" class="btn w-[100px] h-[50px]">E3</button>
+                                        <button id="E4" class="btn w-[100px] h-[50px]">E4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6th row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>F</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="F1" class="btn w-[100px] h-[50px]">F1</button>
+                                        <button id="F2" class="btn w-[100px] h-[50px]">F2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="F3" class="btn w-[100px] h-[50px]">F3</button>
+                                        <button id="F4" class="btn w-[100px] h-[50px]">F4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 7th row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>G</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="G1" class="btn w-[100px] h-[50px]">G1</button>
+                                        <button id="G2" class="btn w-[100px] h-[50px]">G2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="G3" class="btn w-[100px] h-[50px]">G3</button>
+                                        <button id="G4" class="btn w-[100px] h-[50px]">G4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 8th row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>H</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="H1" class="btn w-[100px] h-[50px]">H1</button>
+                                        <button id="H2" class="btn w-[100px] h-[50px]">H2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="H3" class="btn w-[100px] h-[50px]">H3</button>
+                                        <button id="H4" class="btn w-[100px] h-[50px]">H4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 9th row -->
+                            <div class="ml-1 flex gap-7 items-center">
+                                <h1>I</h1>
+                                <div class="ml-1 flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="I1" class="btn w-[100px] h-[50px]">I1</button>
+                                        <button id="I2" class="btn w-[100px] h-[50px]">I2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="I3" class="btn w-[100px] h-[50px]">I3</button>
+                                        <button id="I4" class="btn w-[100px] h-[50px]">I4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 10th row -->
+                            <div class="flex gap-7 items-center">
+                                <h1>J</h1>
+                                <div class="flex justify-between w-[90%]">
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="J1" class="btn w-[100px] h-[50px]">J1</button>
+                                        <button id="J2" class="btn w-[100px] h-[50px]">J2</button>
+                                    </div>
+                                    <div class="w-[30%] flex gap-5">
+                                        <button id="J3" class="btn w-[100px] h-[50px]">J3</button>
+                                        <button id="J4" class="btn w-[100px] h-[50px]">J4</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- left side end -->
 
+                    <div class="w-[5%] flex justify-center">
+                        <div class="hr-vertical my-auto"></div>
+                    </div>
+
                     <!-- right side start -->
                     <div class="w-[40%] pt-2 pl-8 pr-8">
                         <h3 class="text-2xl font-extrabold mb-6 mt-24 text-start">Select Your Seat</h3>
                         <hr class="border border-dashed bg-[#03071233] mb-6">
-
                         <div class="bg-[#F7F8F8] border rounded-3xl p-8">
                             <div class="flex justify-between mt-6 font-semibold">
-                                <div class="flex">
-                                    <p>Departure Time</p>
-                                    <button class="btn bg-[#1DD100] text-white w-[2px]">2</button>
+                                <div class="">
+                                    <p>Seat <sup
+                                            class="bg-[#1DD100] text-white rounded-md p-2 w-[23px] h-[13px]">2</sup></p>
                                 </div>
-                                <p>Dhaka-Sylhet</p>
+                                <p>class</p>
+                                <p>Price</p>
                             </div>
                             <hr class="mb-6 mt-6">
-                            <div class="flex justify-between mt-6 mb-6 font-semibold">
-                                <p>Route</p>
-                                <p>9:00 PM</p>
+                            <div>
+                                <div class="flex justify-between mt-6 mb-6 font-semibold">
+                                    <p>C2</p>
+                                    <p>Economy</p>
+                                    <p>550</p>
+                                </div>
+                                <div class="flex justify-between mt-6 mb-6 font-semibold">
+                                    <p>C2</p>
+                                    <p>Economy</p>
+                                    <p>550</p>
+                                </div>
                             </div>
                             <hr class="mb-6 mt-6">
-
-                            <div class="flex justify-between gap-1">
-                                <div class="rounded-lg bg-[#0307120D] p-2">
-                                    <p>Boarding Point - Laxmipur</p>
-                                </div>
-                                <div class="rounded-lg bg-[#0307120D] p-3">Dropping Point - Bogura</div>
-                                <div class="rounded-lg bg-[#0307120D] p-3">Est. Time - 11 Hour</div>
+                            <div class="flex justify-between gap-1 text-[#030712] font-bold text-base mb-2">
+                                <h4>Total Price</h4>
+                                <span>BDT 0</span>
                             </div>
 
+                            <div>
+                                <label class="input input-bordered flex items-center gap-2 h-16">
+                                    <input type="text" class="grow" placeholder="Search" />
+                                    <div class="">
+                                        <button class="btn bg-[#1DD100] text-white rounded-lg p-4">Apply</button>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="flex justify-between gap-1 text-[#030712] font-bold text-base mb-2 mt-2">
+                                <h4>Grand Total</h4>
+                                <span>BDT 0</span>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <label class="form-control w-full mt-3">
+                                <div class="label">
+                                    <span class="label-text font-bold text-base">Enter your Name*</span>
+                                </div>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
+                            </label>
+                            <label class="form-control w-full mt-3">
+                                <div class="label">
+                                    <span class="label-text font-bold text-base">Phone Number*</span>
+                                </div>
+                                <input type="text" placeholder="Enter your phone number"
+                                    class="input input-bordered w-full" />
+                            </label>
+                            <label class="form-control w-full mt-3">
+                                <div class="label">
+                                    <span class="label-text font-bold text-base">Email ID</span>
+                                </div>
+                                <input type="text" placeholder="Enter your email id"
+                                    class="input input-bordered w-full" />
+                            </label>
+                            <button class="btn bg-[#1DD100] text-white w-full mt-3">Next</button>
+                        </div>
+
+                        <div class="flex justify-around mt-6">
+                            <p class="underline">Terms and Conditions</p>
+                            <p class="underline">Cancellation Policy</p>
                         </div>
                     </div>
                     <!-- right side end -->
@@ -247,6 +442,7 @@
         <!-- PH paribahan section end -->
 
     </main>
+    <script src="script/utilities.js"></script>
     <script src="script/smart-ticketing.js"></script>
 </body>
 

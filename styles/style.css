@@ -3,3 +3,8 @@
 .font-raleway {
     font-family: "Raleway", sans-serif;
 }
+
+.hr-vertical {
+    border-left: 2px dashed rgba(3, 7, 18, 0.3);
+    height: 90%;
+}
