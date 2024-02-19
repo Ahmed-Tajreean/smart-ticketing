@@ -8,7 +8,6 @@ document.getElementById('buy-tickets-button').addEventListener('click', function
 }
 );
 
-// Update grand total
 function updateGrandTotal(discountPrice) {
     let price = document.getElementById("total-price");
     let tPrice = parseInt(price.innerText);
@@ -17,7 +16,7 @@ function updateGrandTotal(discountPrice) {
     let totalPrice = document.getElementById("grand-total")
     totalPrice.innerText = tPrice;
 }
-// apply coupon code
+
 function discountedPrice() {
     const couponCode = document.getElementById("coupon");
     const coupon = couponCode.value;
@@ -53,7 +52,7 @@ function insertSeatInfo(seatID) {
     const content3 = '550';
 
     const htmlContent = `
-    <div class="flex justify-between mt-6 mb-6 font-semibold">
+    <div id="${seatID}-div" class="flex justify-between mt-6 mb-6 font-semibold">
       <p>${content1}</p>
       <p>${content2}</p>
       <p>${content3}</p>
@@ -62,8 +61,14 @@ function insertSeatInfo(seatID) {
 
     const seatInfoDiv = document.getElementById('seat-info');
 
-    // Append the generated HTML content to the seat-info div
     seatInfoDiv.innerHTML += htmlContent;
+}
+
+function removeSeatInfo(seatID) {
+    const divToRemove = document.getElementById(`${seatID}-div`);
+    if (divToRemove) {
+        divToRemove.parentNode.removeChild(divToRemove);
+    }
 }
 
 
@@ -85,6 +90,7 @@ function handleSeatSelection(button) {
     const maxSeatsAllowed = 4;
     const allSeatButtons = document.getElementById("left-side").querySelectorAll(".btn");
     const applyCuponButton = document.getElementById('apply-coupon-btn');
+    const purchaseTicket = document.getElementById("next-btn");
 
     if (!button.classList.contains('selected')) {
         if (selectedSeats.length < maxSeatsAllowed) {
@@ -104,6 +110,7 @@ function handleSeatSelection(button) {
         removeBackgroundColorById(button.id);
         updateSeatsLeft();
         updateSelectedSeatNumber();
+        removeSeatInfo(button.id);
     }
 
     for (let i = 0; i < allSeatButtons.length; i++) {
@@ -117,6 +124,7 @@ function handleSeatSelection(button) {
 
     const selectedCount = document.querySelectorAll('.selected').length;
     applyCuponButton.disabled = selectedCount < maxSeatsAllowed;
+    purchaseTicket.disabled = selectedCount == 0;
 }
 
 const seatButtons = document.querySelectorAll('#left-side .btn');
