@@ -24,3 +24,6 @@ function updateSeatsLeft() {
 
     seatsLeftCountElement.innerText = seatsLeft;
 }
+
+
+
