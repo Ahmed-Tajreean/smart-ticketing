@@ -8,6 +8,14 @@ document.getElementById('buy-tickets-button').addEventListener('click', function
 }
 );
 
+function updateSeatsLeft() {
+    const selectedSeats = document.querySelectorAll('.selected');
+    const seatsLeftCountElement = document.getElementById('seatsLeftCount');
+    const totalSeats = 40;
+    const seatsLeft = totalSeats - selectedSeats.length;
+
+    seatsLeftCountElement.innerText = seatsLeft;
+}
 
 function handleSeatSelection(button) {
     const selectedSeats = document.querySelectorAll('.selected');
@@ -19,12 +27,14 @@ function handleSeatSelection(button) {
         if (selectedSeats.length < maxSeatsAllowed) {
             button.classList.add('selected');
             setBackgroundColorById(button.id);
+            updateSeatsLeft();
         } else {
             alert('You can only select up to 4 seats.');
         }
     } else {
         button.classList.remove('selected');
         removeBackgroundColorById(button.id);
+        updateSeatsLeft();
     }
 
     for (let i = 0; i < allSeatButtons.length; i++) {
@@ -46,3 +56,5 @@ for (let i = 0; i < seatButtons.length; i++) {
         handleSeatSelection(button);
     });
 }
+
+updateSeatsLeft();
